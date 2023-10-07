@@ -1,0 +1,39 @@
+﻿.TagsInputContainer{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+}
+.TagsInputContainer > *,
+.TagsInputContainer .Tags > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+.TagsInputContainer .Tags .Tag{
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 7px;
+    margin-bottom: 5px;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+}
+.TagsInputContainer .Tags .Tag [class*="times"]{
+    margin-right: 4px;
+}
+.TagsInputContainer .Tags .Tag [class*="times"]:hover{
+    cursor: pointer;
+}
+.TagsInputContainer .Tags .Tag p{
+    margin: 0
+}
+.TagsInputContainer input{
+    border: none;
+    padding: 7px 3px
+}
+.TagsInputContainer .Tags .Tag.invalid{
+    background-color: #e44e44;
+    color: #fff;
+}

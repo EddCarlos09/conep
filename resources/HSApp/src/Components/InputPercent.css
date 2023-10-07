@@ -1,0 +1,54 @@
+﻿.InputPercentContainer{
+    position: relative;
+}
+.InputPercentContainer svg {
+    overflow: inherit;
+}
+.InputPercentContainer .cls {
+    stroke-dasharray: 315;
+    /*stroke-dashoffset: 210%;*/
+    stroke-width: 10;
+    /*stroke-linecap: round;*/
+    /*animation: draw ease 1s forwards;
+    animation-delay: 1s;*/
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.InputPercentContainer .track {
+    stroke-width: 5;
+    stroke: #ccc;
+}
+.InputPercentContainer text {
+    /*font-size: 3em !important;*/
+    font-weight: bold !important;
+}
+.InputPercentContainer input{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    width: 65px;
+    height: 50px;
+    text-align: center;
+    /*font-size: 3em;*/
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+.dato .result {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% + 110px);
+}
+/*@keyframes draw {*/
+    /*from {
+        stroke-dasharray: 350;
+        stroke-dashoffset: 350;
+    }*/
+/*}*/

@@ -1,0 +1,48 @@
+id,created_at,nombre,descripcion,activo,usercreated,usermodifed,updated_at
+3,08:38.5,Medio Ambiente,NA,1,NA,NA,08:38.5
+100,08:53.1,Tránsito y transporte,"aéreo, fluvial, masivo, código de tránsito, normas de tránsito, pico y placa,",1,NA,NA,30:45.9
+38,08:39.8,Servicios Públicos,NA,1,NA,NA,08:39.8
+55,08:42.2,Mujer,NA,1,NA,NA,08:42.2
+63,08:43.7,Corrupción,NA,1,NA,NA,08:43.7
+95,08:51.4,Familia,NA,1,NA,NA,08:51.4
+106,08:55.0,Juegos Azar,NA,1,NA,NA,08:55.0
+8,08:38.6,Agropecuario y agrícola,"agricultura, animales",1,NA,NA,23:49.8
+116,11:37.4,Bienestar y pobreza,todo lo relacionado con política social,1,NA,NA,11:37.4
+94,08:51.3,Derechos Humanos y DIH,NA,1,NA,NA,24:07.7
+47,08:41.2,"Celebraciones, honores y monumentos","efemérides, patrimonio, conmemoraciones",1,NA,NA,16:44.9
+53,08:41.8,"Comunicaciones, medios y tecnologías de la información","tecnologías de la información, televisión, satélites, radio",1,NA,NA,28:27.9
+119,19:11.4,Conflicto armado,"procesos de paz, víctimas, justicia y paz, intercambio humanitario, desmovilización, reinserción",1,NA,NA,19:11.4
+64,08:43.7,"Comercio, industria y turismo",consumidores,1,NA,NA,19:31.9
+2,08:38.5,"Educación, cultura, ciencia y tecnología","ciencia, investigación, cultura",1,NA,NA,44:57.1
+22,08:39.0,Laboral,"Salarios, sindicatos, huelgas, trabajo, empleo, prestaciones",1,NA,NA,25:55.2
+108,08:56.3,Política Internacional,"relaciones internacionales, TLC, tratados, convenciones, acuerdos, migración, doble nacionalidad, fronteras",1,NA,NA,29:02.7
+120,46:47.0,Minorías étnicas y sexuales,"indígenas, afros, LGBT",1,NA,NA,46:47.0
+121,59:47.9,Rama Ejecutiva,"presidente, ministros, gobernadores, alcaldes, secretarías",1,NA,NA,59:47.9
+122,43:48.5,Justicia,"cárceles, códigos, delitos, narcotráfico, extradición",1,NA,NA,43:48.5
+123,59:56.5,"Seguridad, defensa y fuerza pública","servicio militar, seguridad ciudadana, armas",1,NA,NA,59:56.5
+124,31:07.5,Asuntos administrativos,NA,0,NA,NA,31:07.5
+28,08:39.3,Derechos Fundamentales,NA,1,NA,NA,18:22.4
+111,37:42.9,Derechos de autor,propiedad intelectual,1,NA,NA,18:41.2
+4,08:38.5,Estampillas,NA,1,NA,NA,27:31.7
+73,08:45.5,Infraestructura,obras públicas,1,NA,NA,34:55.8
+41,08:39.9,Economía,"hacienda y crédito público, desarrollo económico, impuestos, aduanas, presupuesto, regulación financiera, gasto público. contratación, exenciones. régimen monetario, Banco de la República, mercado de valores, regalías, juegos de azar, tasas de interés, economía informal",1,NA,NA,26:08.3
+62,08:43.4,Notariado y registro,NA,1,NA,NA,41:11.0
+56,08:42.4,Minas y energía,"combustibles, hidrocarburos",1,NA,NA,39:55.4
+50,08:41.7,Organismos de Control y Ministerio público,"ministerio público, contraloría, procuraduría, defensoría",1,NA,NA,41:39.6
+30,08:39.4,Participación ciudadana,"juntas, organizaciones comunitarias, mecanismos de participación",1,NA,NA,43:22.9
+97,08:52.8,Plan Nacional de Desarrollo,NA,1,NA,NA,45:14.4
+35,08:39.5,Profesiones,"códigos de ética, tarjetas profesionales,",1,NA,NA,09:24.6
+67,08:44.3,Recreación y deporte,NA,1,NA,NA,13:26.2
+20,08:38.9,Rama Legislativa,"senadores, representantes, reglamento del congreso, funcionarios del congreso",1,NA,NA,14:20.1
+11,08:38.6,Rama Judicial,"cortes, jueces",1,NA,NA,14:37.7
+125,41:20.3,Vivienda,"catastro, vivienda de interés social",0,NA,NA,33:33.7
+128,35:14.4,Desastres y calamidades,NA,0,NA,NA,35:14.4
+130,44:49.4,Partidos y movimientos,"campañas, elecciones, participación política, oposición",0,NA,NA,44:49.4
+133,12:02.3,Presupuesto,NA,0,NA,NA,53:23.2
+134,35:38.4,Impuestos,NA,0,NA,NA,35:38.4
+10,08:38.6,Seguridad Social y salud,"pensiones, cesantías, salud, riesgos profesionales, cajas de previsión, hospitales, cajas compensación familiar",1,NA,NA,55:29.8
+138,59:05.2,Administración pública,"Carrera administrativa, contratación pública",1,NA,NA,59:05.2
+145,24:16.6,Infancia y adolescencia,NA,1,NA,NA,24:16.6
+146,49:46.6,Implementación paz,Los relacionados con el posconflicto,1,NA,NA,49:46.6
+101,08:53.1,Organización Electoral y elecciones,"candidatos, elecciones, registraduría, cédula, consejo nacional electoral, censo, tarjetones",1,NA,NA,45:42.0
+5,08:38.5,Ordenamiento Territorial y regiones,NA,1,NA,NA,25:34.4

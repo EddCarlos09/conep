@@ -1,0 +1,74 @@
+/* Container */
+.ImageForMultipleResolutionContainer{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+.ImageForMultipleResolutionContainer.FileLoaded{
+    min-height: 350px;
+    padding-bottom: 0;
+}
+/* End container */
+
+/* Content */
+
+.ContentHidden {
+    visibility: hidden;
+    display: none;   
+}
+
+/* End content */
+
+/* Header */
+.ImageForMultipleResolutionHeader{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 17px;
+}
+/* End header */
+
+/* Body */
+.ImageForMultipleResolutionBody{
+    padding: 25px 0;
+    overflow-x: auto;
+}
+.ImageForMultipleResolutionBody::-webkit-scrollbar{
+    height: 10px;
+}
+.ImageForMultipleResolutionBody::-webkit-scrollbar-thumb{
+    background-color: #4d4d4d;
+    border-radius: 5px;
+}
+.ImageForMultipleResolutionBody::-webkit-scrollbar-track{
+    background-color: #ccc;
+}
+.ImageForMultipleResolutionBody .ImagesContainer{
+    white-space: nowrap;
+}
+.ImageForMultipleResolutionBody .ImagesContainer .Item{
+    margin: 10px 25px;
+    display: inline-block;
+}
+.ImageForMultipleResolutionBody .ImagesContainer .Item .Image img{
+    display: block;
+    margin: auto;
+}
+.ImageForMultipleResolutionBody .ImagesContainer .Item .Title p{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 7px;
+}
+
+/* End body */
+
+/* Footer */
+.ImageForMultipleResolutionFooter{
+    border-top: 1px solid #ccc;
+    padding: 15px;
+}
+.ImageForMultipleResolutionFooter .Actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End footer */

@@ -1,0 +1,76 @@
+﻿.MuiCard-root{
+    position: relative;
+}
+.MuiCard-root::before {
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    content: '';
+    z-index: 1;
+    position: absolute;
+    border-top: 1px solid #eaeaea
+}
+.MuiCardActionArea-root{
+    text-align: left;
+}
+.MuiTypography-body1{
+    text-align: justify;
+}
+.MuiCardContent-root > div:not(:last-child) p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.MuiCardContent-root > .cutted:last-child{
+    overflow: hidden;
+    position: relative;
+}
+.MuiCardContent-root > .cutted:last-child::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    bottom: 0;
+    left: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,.9) 31%, rgba(255,255,255,.6) 51%, rgba(255,255,255,.3) 100%);
+    z-index: 1
+}
+
+.MuiTypography-h4{
+    font-size: 1.35em !important;
+    border-bottom: 1px solid #eaeaea;
+    /* text-transform: uppercase; */
+    font-weight: bold !important;
+    line-height: 1.35 !important;
+}
+.MuiTypography-gutterBottom{
+    min-height: 40px;
+}
+.posts .makeStyles-root-1{
+    min-height: 100px;
+    max-height: 100px;
+}
+
+
+@media only screen and (max-width: 1500px) and (min-width: 651px){
+    .MuiTypography-h4{
+        font-size: 1.2em !important;
+    }
+    .MuiTypography-h6{
+        font-size: 1.1em !important;
+        text-align: left !important;
+    }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 300px){
+    .MuiTypography-h4{
+        font-size: 1.15em !important;
+    }
+    .MuiTypography-h6{
+        font-size: 1em !important;
+        text-align: left !important;
+    }
+}

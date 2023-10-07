@@ -1,0 +1,117 @@
+.Calendar {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+}
+.Calendar__weekDays{
+    color: var(--sl-blue-primary);
+    font-weight: bold;
+    text-decoration: none
+}
+.Calendar__day{
+    border-radius: 7px !important;
+}
+
+.Calendar__day.-weekend:not(.-selected):not(.-blank):not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween){
+    color: var(--sl-blue-primary);
+    font-weight: bold;
+}
+.Calendar__day:not(.-blank):not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween):not(.-selected):hover{
+    background: var(--bg-color-odd-evento);
+    color: #000;
+    border-color: transparent;
+}
+.Calendar__day.-today:not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween){
+    color: var(--blue-primary) !important;
+    border: 1px solid var(--sl-blue-primary);
+}
+.Calendar__monthSelector, .Calendar__yearSelector{
+    background-color: var(--sl-blue-primary);
+}
+.Calendar > :not(.Calendar__footer) button{
+    color: rgb(206, 217, 235);
+}
+.Calendar__monthYear.-shown button{
+    color: #000;
+    font-weight: bold;
+    font-family: var(--font-condensed);
+    font-size: 1.5em;
+}
+.Calendar__monthYear.-shown > *:hover, .Calendar:not(.-noFocusOutline) .Calendar__monthYear.-shown > *:focus, .Calendar__monthYear > *.-activeBackground{
+    background: transparent;
+}
+
+.Calendar__monthSelectorItem:not(.-active) .Calendar__monthSelectorItemText:not(:disabled):hover, .Calendar__yearSelectorItem:not(.-active) .Calendar__yearSelectorText:not(:disabled):hover{
+    background: rgb(206, 217, 235);
+    color: var(--sl-blue-primary);
+}
+.Calendar__monthSelectorItem.-active .Calendar__monthSelectorItemText, .Calendar__yearSelectorItem.-active .Calendar__yearSelectorText{
+    background-color: transparent;
+    color: rgb(206, 217, 235);
+    border: 1px solid rgb(206, 217, 235);
+}
+.Calendar__yearSelectorWrapper::before {
+    background-image: linear-gradient(to top, var(--sl-blue-primary) var(--sl-blue-primary) 10%, rgba(245, 245, 245, 0));
+    bottom: 0;
+}
+.Calendar__yearSelectorWrapper::after {
+    background-image: linear-gradient(to bottom, var(--sl-blue-primary) var(--sl-blue-primary) 10%, rgba(245, 245, 245, 0));
+    top: -0.1em;
+}
+/* .calendarContainer .dayWrapper button{
+    color: var(--sl-blue-primary);!important;
+}
+.today button{
+    border: 3px solid var(--bg-blue-op7) !important;
+}
+.calendarContainer .selected button, .calendarContainer .selected button:active, .calendarContainer .selected button:focus, .calendarContainer .selected button:hover :not([disabled]){
+    background-color: var(--sl-blue-primary);!important;
+    color: rgb(206, 217, 235) !important;
+}
+.calendarContainer .dayWrapper:not(.selected) button:hover{
+    --bg-blue-op7: rgba(38, 61, 95, .1) !important;
+    background-color:  var(--bg-blue-op7) !important;   
+
+}
+.calendarContainer .heading .title{
+    border: none !important;
+}
+.calendarContainer .heading .title:hover{
+    background-color: transparent !important;
+}
+.calendarContainer .heading .title:focus{
+    outline: none !important;
+}
+.calendarButton{
+    background-color: var(--sl-blue-primary);!important;
+    width: 250px !important;
+    display: block !important;
+    margin: auto !important;
+    margin-top: 22px !important;
+    border: 1px solid transparent !important;
+}
+.calendarButton:focus{
+    outline: none !important;
+}
+.calendarButton:hover{
+    background-color: rgb(206, 217, 235) !important;
+    color: var(--sl-blue-primary);!important;
+    border: 1px solid var(--sl-blue-primary);!important;
+} */
+.Calendar__day.tieneEventos{
+    position: relative;
+}
+.Calendar__day.tieneEventos::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--co-yellow-primary);
+    border-radius: 30%;
+    position: absolute;
+    left: calc(10%);
+    top: 5px;
+}
+.Calendar__day.-selected, .Calendar__day.-selectedStart, .Calendar__day.-selectedEnd{
+    background-color: var(--blue-primary);
+}

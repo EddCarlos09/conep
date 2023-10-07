@@ -1,0 +1,159 @@
+﻿/* General */
+.TableContainer table {
+    border-spacing: 0 10px;
+    border-collapse: separate;
+    display: table;
+    border: none !important;
+    font-weight: 600;
+}
+.center-block {
+    display: block !important;
+    margin: auto !important;
+}
+.TableContainer table i {
+    margin: 5px;
+}
+
+/* End general */
+
+/* Thead */
+.TableContainer table thead tr th {
+    padding: 15px 0 !important;
+    text-align: center;
+    line-height: 0
+}
+.TableContainer .icon {
+    padding-left: 35px !important;
+    position: relative;
+}
+.TableContainer table thead tr th p{
+    margin-bottom: 0;
+    line-height: normal;
+}
+.TableContainer table thead tr .AccionesTh-child {
+    width: 150px;
+}
+.TableContainer table thead tr:nth-of-type(2) th {
+    transform: translateY(-9px);
+}
+.TableContainer table thead th.ExTh {
+    width: 10px;
+}
+/* End thead */
+/* Tbody */
+.TableContainer table tbody tr {
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.TableContainer table tbody tr,
+.TableContainer table tbody tr td {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+.TableContainer table tbody tr td{
+    padding: 10px !important;
+    transition: ease all .3s
+}
+.TableContainer table tbody tr td.ExpandButton{
+    padding: 10px 5px !important;
+}
+.TableContainer table tbody tr:hover td{
+    background-color: var(--table-header) !important;
+    /* transform: translateY(2px) */
+}
+.TableContainer table tbody td.ExpandButton {
+    background-color: #1b6ec2 !important;
+    color: #fff;
+    width: 10px;
+}
+.TableContainer table tbody td.ExpandButton:hover{
+    background-color: #333 !important;
+    cursor: pointer;
+}
+.TableContainer table tbody tr td:first-child {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+.TableContainer table tbody tr td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.TableContainer table tbody tr [role="cantidad"],
+.TableContainer table tbody tr [role="fecha"],
+.TableContainer table tbody tr [role="categoria"] {
+    text-align: center;
+}
+.TableContainer table tbody tr [role="texto"] {
+    text-align: left;
+}
+.TableContainer tr.trChild ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.TableContainer tr.trChild ul li {
+    margin-bottom: 3px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0
+}
+.TableContainer tr.trChild ul li span:nth-of-type(1){
+    width: 35%;
+    padding-right: 5px
+}
+.TableContainer tr.trChild ul li span:nth-of-type(2){
+    width: 65%;
+}
+/* End Tbody */
+
+/* Buttons */
+.TableContainer tbody button{
+    width: 150px !important;
+    display: block;
+    margin: auto;
+}
+/* End buttons */
+
+/* Pagination */
+
+.TableContainer .pagination button {
+    width: 38px;
+    height: 38px;
+    padding: 0
+}
+.TableContainer .pagination span {
+    margin: 0 12px
+}
+.TableContainer .pagination input{
+    width: 100px !important;
+    text-align: right !important; 
+}
+/* End pagination */
+
+.tableInputSearch{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    min-width: 200px;
+}
+
+[name="DataTables_Table_0_length"] {
+    width: 70px !important;
+    text-align-last: center;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 300px){
+    .dataTables_length{
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+    .dataTables_filter{
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+    .dataTables_filter label{
+        float: none;
+    }
+}

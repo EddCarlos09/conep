@@ -1,0 +1,95 @@
+.BuscadorComponent {
+    position: relative;
+}
+.BuscadorComponent .TopFilterContainer{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.BuscadorComponent .TopFilterContainer > :first-child > *{
+    margin-right: 5px;
+}
+.BuscadorComponent .TopFilterContainer,
+.BuscadorComponent .TopFilterContainer > * {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.BuscadorComponent .TopFilterContainer > :first-child{
+    width: 35%;
+}
+.BuscadorComponent .TopFilterContainer > :last-child{
+    width: calc(65% - 15px);
+    margin-left: 15px
+}
+
+.BuscadorComponent .buscadorHeaders ul{
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+.BuscadorComponent .buscadorHeaders ul li{
+    list-style-type: none;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 12px 10px;
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+.BuscadorComponent .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: ease all .3s;
+}
+.BuscadorComponent .item > *{
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 12px;
+}
+.BuscadorComponent .item .photo img{
+    width: 45px;
+}
+.BuscadorComponent .item p{
+    margin: 0;
+}
+.BuscadorComponent .BuscadorContainer .item:nth-child(odd){
+    background-color: #f6f6f6
+}
+.BuscadorComponent .BuscadorContainer .item:nth-child(even){
+    background-color: #ffffff
+}
+.BuscadorComponent .BuscadorContainer .item.selected{
+    position: relative;
+    background-color: #0b4a63;
+    color: #fff;
+}
+.BuscadorComponent .pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.BuscadorComponent .pagination button{
+    border: 1px solid #ccc;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+}
+.BuscadorComponent .pagination input{
+    min-width: 100px;
+}
+.BuscadorComponent{
+    border: 1px solid #eaeaea;
+    padding: 15px;
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,.2)
+}
+.BuscadorComponent .buscadorChoosed {
+    margin: 12px 0;
+    padding: 25px 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc
+}
+.BuscadorComponent .buscadorChoosed p{
+    margin: 0;
+}

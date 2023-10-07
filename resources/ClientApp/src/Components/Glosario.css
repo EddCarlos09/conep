@@ -1,0 +1,44 @@
+.glosarioContainer {
+    display: flex;
+  flex-flow: column wrap;
+  /* Your container needs a fixed height, and it 
+   * needs to be taller than your tallest column. */
+  height: 1350px; 
+}
+.glosarioContainer > *{
+     margin-bottom: 2%;
+     width: calc(20%);
+     margin: 13px;
+}
+.glosarioContainer > * h3{
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 7px;
+}
+.glosarioContainer > * p{
+    padding: 7px 6px;
+    transition: ease all .3s;
+}
+.glosarioContainer > * p:hover{
+    background-color: #eaeaea;
+    transform: translateX(3px);
+    cursor: pointer;
+}
+
+.glosarioContainer > * p.selected{
+    background-color: var(--blue-primary);
+    color: var(--blue-secondary)
+}
+.glosarioContainer > * p.selected:hover{
+    background-color: var(--blue-primary);
+    color: var(--blue-secondary)
+}
+
+@media only screen and (max-width: 740px) and (min-width: 300px){
+    .glosarioContainer {
+        height: auto
+    }
+
+    .glosarioContainer > * {
+        width: calc(100%);
+    }
+}

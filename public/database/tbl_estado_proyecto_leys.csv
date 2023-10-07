@@ -1,0 +1,45 @@
+id,nombre,activo,usercreated,usermodifed,created_at,updated_at
+74,Concepto Institucional,1,NA,NA,NA,NA
+41,Acto Legislativo,1,NA,NA,NA,NA
+77,Objeción Parcial del Ejecutivo,1,NA,NA,NA,NA
+76,Objeción Total del Ejecutivo,1,NA,NA,NA,NA
+12,Aprobada conciliación en Senado,1,NA,NA,NA,NA
+13,Aprobada conciliación en Cámara,1,NA,NA,NA,NA
+78,Informe Legislativo a las Objeciones del Ejecutivo,1,NA,NA,NA,NA
+15,Radicado,1,NA,NA,NA,NA
+79,Aprobado Informe de Objeciones,1,NA,NA,NA,NA
+17,Aprobado Primer Debate,1,NA,NA,NA,NA
+19,Aprobado Segundo Debate,1,NA,NA,NA,NA
+81,Declarado Exequible Total,1,NA,NA,NA,NA
+21,Aprobado Tercer Debate,1,NA,NA,NA,NA
+82,Declarado Exequible Parcial,1,NA,NA,NA,NA
+23,Aprobado Cuarto Debate,1,NA,NA,NA,NA
+25,Aprobado Quinto Debate,1,NA,NA,NA,NA
+27,Aprobado Sexto Debate,1,NA,NA,NA,NA
+29,Aprobado Séptimo Debate,1,NA,NA,NA,NA
+31,Aprobado Octavo Debate,1,NA,NA,NA,NA
+32,Archivado en Debate,1,NA,NA,NA,NA
+33,Archivado por Vencimiento de Términos,1,NA,NA,NA,NA
+34,Retirado por el Autor,1,NA,NA,NA,NA
+36,Objetado Por Presidencia,1,NA,NA,NA,NA
+37,En Conciliación,1,NA,NA,NA,NA
+38,Declarado Inexequible Parcial,1,NA,NA,NA,NA
+39,Declarado Inexequible Total,1,NA,NA,NA,NA
+40,Sancionado como Ley,1,NA,NA,NA,NA
+42,Publicada Ponencia Primer Debate,1,NA,NA,NA,NA
+43,Publicada Ponencia Segundo Debate,1,NA,NA,NA,NA
+44,Publicada Ponencia Tercer Debate,1,NA,NA,NA,NA
+45,Publicada Ponencia Cuarto Debate,1,NA,NA,NA,NA
+46,Publicada Ponencia Quinto Debate,1,NA,NA,NA,NA
+47,Publicada Ponencia Sexto Debate,1,NA,NA,NA,NA
+48,Publicada Ponencia Séptimo Debate,1,NA,NA,NA,NA
+49,Publicada Ponencia Octavo Debate,1,NA,NA,NA,NA
+51,Enviado a Comisión para Primer Debate,1,NA,NA,NA,NA
+52,Enviado a  la Corte para Control,1,NA,NA,NA,NA
+56,Publicación,1,NA,NA,NA,NA
+63,Aprobada Conciliación,1,NA,NA,NA,NA
+68,Acumulado,1,NA,NA,NA,NA
+70,Archivado por Tránsito de Legislatura,1,NA,NA,NA,NA
+72,Publicada ponencia primer y tercer debate,1,NA,NA,NA,NA
+73,Aprobado Primer y Tercer Debate,1,NA,NA,NA,NA
+75,Rechazado informe de objeciones,1,NA,NA,NA,NA

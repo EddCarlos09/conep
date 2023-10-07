@@ -1,0 +1,82 @@
+﻿.SelectCheckboxContainer{
+    position: relative;
+    overflow: hidden;
+    transition: ease all .3s
+    /*margin: 0 12px;*/
+}
+.SelectCheckboxContainer.show{
+    overflow: visible;
+}
+.SelectCheckboxContainer .topInfo{
+    position: relative;
+    background-color: #fff;
+    padding-right: 36px;
+    min-height: 38px;
+    padding-top: 3px;
+    padding-left: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    z-index: 20;
+}
+.SelectCheckboxContainer .topInfo:hover{
+    cursor: pointer;
+}
+.SelectCheckboxContainer p{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    margin: 0;
+}
+.SelectCheckboxContainer .topInfo i{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #ccc;
+    font-size: 2em;
+}
+
+/* Options */
+
+.SelectCheckboxContainer .options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 0px;
+    padding: 3px;
+    padding-top: 40px;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.SelectCheckboxContainer .options .SCItem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 0px;
+    transition: ease all .3s;
+}
+.SelectCheckboxContainer .options .SCItem:hover{
+    transform: translateX(10px);
+    background-color: #deebff;
+}
+.SelectCheckboxContainer .options input{
+    width: 35px;
+}
+
+.SelectCheckboxContainer.show .options{
+    max-height: 650px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

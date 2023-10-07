@@ -1,0 +1,70 @@
+﻿.selectReact__value-container {
+    height: 38px !important;
+}
+
+.selectReact__value-container__control {
+    height: 37px !important;
+}
+.selectReact__value-container__control:hover .selectReact__value-container__menu-list{
+    position: relative;
+    z-index: 10000;
+}
+
+.selectReact__value-container__value-container {
+    margin-top: -2px !important;
+}
+
+    .selectReact__value-container__value-container .css-b8ldur-Input {
+        margin-top: 0.4px !important;
+    }
+
+.selectReact__value-container__menu {
+    margin-top: 0px !important;
+    z-index: 999999;
+}
+
+.selectReact__value-container__menu-list {
+    overflow-x: hidden;
+}
+.css-2b097c-container{
+    /* z-index: 9; */
+}
+/* .selectReact__value-container__menu.selectReact__value-container__control--is-focused .selectReact__value-container__menu-list {
+    background-color: red !important;
+} */
+.selectReact__value-container__option {
+    padding: 10px 12px !important;
+    transition: ease all .3s;
+    z-index: 9;
+}
+.css-26l3qy-menu{
+    z-index: 10 !important;
+}
+.selectReact__value-container__option:hover {
+    transform: translateX(10px);
+    cursor: pointer;
+    background-color: var(--blue-secondary);
+}
+
+.css-g1d714-ValueContainer{
+    position: static !important;
+}
+.css-tlfecz-indicatorContainer{
+    width: 40px !important;
+}
+.css-1hb7zxy-IndicatorsContainer{
+    width: 35px !important;
+}
+.css-1pahdxg-control{
+    border-color: var(--blue-primary) !important;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .3) !important;
+}
+.css-9gakcf-option{
+    background-color: var(--blue-primary) !important;
+}
+.css-yk16xz-control{
+    border: none !important;
+    border-bottom: 1px solid var(--blue-secondary);
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,.1);
+}
+

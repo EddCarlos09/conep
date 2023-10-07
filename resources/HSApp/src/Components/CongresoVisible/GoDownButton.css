@@ -1,0 +1,67 @@
+.GoDownButtonContainer svg{
+    overflow: inherit;
+}
+.GoDownButtonContainer .arrow{
+    fill: #b3b8bc;
+    transition: ease all .3s;
+    transform-origin: center;
+    transform: translateY(-5px);
+}
+.GoDownButtonContainer .button-hexagon {
+    stroke-miterlimit: 10;
+    stroke-width: 4px;
+    opacity: 0.7;
+    transition: ease all 1s;
+    stroke-dasharray: 235px;
+    stroke-dashoffset: 5px;
+}
+.GoDownButtonContainer .button-hexagon{
+    transform-origin: center;
+}
+.GoDownButtonContainer:hover{
+    cursor: pointer;
+}
+.GoDownButtonContainer:hover .button-hexagon {
+    stroke-dasharray: 270px;
+    stroke-dashoffset: -505px;
+    transform: rotateZ(60deg);
+}
+.GoDownButtonContainer:hover .arrow{
+    transform: translateY(1px);
+}
+.GoDownButtonContainer .button-hexagon{
+    fill: #263d6000;
+    /* stroke: var(--blue-primary); */
+    stroke: var(--bg-header);
+}
+.GoDownButtonContainer .arrow{
+    /* fill: var(--blue-primary-hover); */
+    fill: #000;
+}
+.GoDownButtonContainer:hover .button-hexagon {
+    fill: #32599400;
+    /* stroke: var(--blue-primary); */
+    stroke: #000;
+}
+.GoDownButtonContainer:hover .arrow{
+    /* fill: #333; */
+    fill:var(--bg-header);
+}
+
+.bg-blue .GoDownButtonContainer .button-hexagon{
+    fill: #b3b8bc00;
+    /* stroke: #000; */
+    stroke: var(--bg-header);
+}
+.bg-blue .GoDownButtonContainer .arrow{
+    /* fill: #b3b8bc; */
+    fill: #000;
+}
+.bg-blue .GoDownButtonContainer:hover .button-hexagon {
+    fill: #b3b8bc00;
+    stroke: #000;
+}
+.bg-blue .GoDownButtonContainer:hover .arrow{
+    /* fill: #fff; */
+    fill: var(--bg-header);
+}

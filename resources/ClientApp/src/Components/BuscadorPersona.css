@@ -1,0 +1,97 @@
+.BuscadorPersonaComponent {
+    position: relative;
+}
+.BuscadorPersonaComponent .TopFilterContainer{
+    width: 100%;
+}
+.BuscadorPersonaComponent .TopFilterContainer > :first-child > *{
+    margin-right: 5px; 
+}
+.BuscadorPersonaComponent .TopFilterContainer,
+.BuscadorPersonaComponent .TopFilterContainer > * {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.BuscadorPersonaComponent .TopFilterContainer > :first-child{
+    width: 35%;
+}
+.BuscadorPersonaComponent .TopFilterContainer > :last-child{
+    width: calc(65% - 15px);
+    margin-left: 15px 
+}
+
+.BuscadorPersonaComponent .buscadorHeaders ul{
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+.BuscadorPersonaComponent .buscadorHeaders ul li{
+    list-style-type: none;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 12px 10px;
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+.BuscadorPersonaComponent .personaItem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: ease all .3s;
+}
+.BuscadorPersonaComponent .personaItem > *{
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 12px;
+}
+.BuscadorPersonaComponent .personaItem .photo img{
+    width: 45px;
+}
+.BuscadorPersonaComponent .personaItem p{
+    margin: 0;
+}
+.BuscadorPersonaComponent .BuscadorPersonaContainer .personaItem:nth-child(odd){
+    background-color: #f6f6f6
+}
+.BuscadorPersonaComponent .BuscadorPersonaContainer .personaItem:nth-child(even){
+    background-color: #ffffff
+}
+.BuscadorPersonaComponent .BuscadorPersonaContainer .personaItem.selected{
+    position: relative;
+    background-color: #0b4a63;
+    color: #fff;
+}
+.BuscadorPersonaComponent .BuscadorPersonaContainer .personaItem:hover{
+    cursor: pointer;
+}
+.BuscadorPersonaComponent .pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.BuscadorPersonaComponent .pagination button{
+    border: 1px solid #ccc;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+}
+.BuscadorPersonaComponent .pagination input{
+    min-width: 100px;
+}
+.BuscadorPersonaComponent{
+    border: 1px solid #eaeaea;
+    padding: 15px;
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,.2)
+}
+.BuscadorPersonaComponent .personaChoosed {
+    margin: 12px 0;
+    padding: 25px 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc
+}
+.BuscadorPersonaComponent .personaChoosed p{
+    margin: 0;
+}

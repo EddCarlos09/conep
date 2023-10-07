@@ -1,0 +1,5 @@
+[1219/185942.100:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1221/135244.570:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1231/185321.033:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[0108/105404.478:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[0308/123103.556:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\edmaf\AppData\Local\BraveSoftware\Brave-Browser\User Data\Crashpad\reports\34e1f76b-feae-4430-a2bb-8101f243e62e.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)

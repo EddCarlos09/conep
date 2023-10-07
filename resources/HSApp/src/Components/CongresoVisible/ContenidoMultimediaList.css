@@ -1,0 +1,80 @@
+/* Contenido multimedia */
+.CMTitle{
+    border-bottom: 2px solid #000;
+    padding: 0px 25px;
+    width: calc(100% - 35px);
+    display: block;
+    margin: auto;
+}
+.CMTitle > * {
+    font-size: 3em;
+    color: #000 !important;
+    text-transform: uppercase;
+}
+
+.CMList {
+    position: relative;
+    /* padding: 20px; */
+}
+.CMList .CMItem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    padding-right: 95px;
+    position: relative;
+    min-height: 95px;
+}
+
+.CMList .CMItem:nth-child(odd){
+    background-color: var(--bg-color-odd-evento);
+}
+.CMList .CMItem:nth-child(even){
+    background-color: var(--bg-color-even-evento);
+}
+.CMList .CMItem .title strong{
+    display: inline-block;
+}
+.CMList .CMItem .action{
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    margin: 7px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,.3);
+    border: 1px solid var(--bg-header);
+    color: var(--bg-header);
+    position: absolute;
+    right: 0;
+    align-self: center;
+}
+.CMList .CMItem .action p{
+    margin: 0;
+    font-size: .7em
+}
+.CMList .CMItem .action :first-child{
+    font-size: 1.7em;
+}
+.CMList .CMItem .action :first-child{
+    margin-bottom: 10px;
+}
+.CMList .CMItem .action p{
+    margin-top: -10px
+}
+.CMList .CMItem > :first-child{
+    min-width: 280px;
+}
+.CMList .CMItem > *:not(a){
+    width: calc(100%);
+    margin: 0 15px;
+    font-size: .9em;
+}
+/* End contenido multimedia */

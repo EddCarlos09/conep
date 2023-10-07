@@ -1,0 +1,77 @@
+.agendaContainer {}
+.agendaContainer > * {
+    border: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px !important;
+    text-align: center;
+}
+.agendaContainer > *:nth-last-child(1),
+.agendaContainer > *:nth-last-child(2){
+    width: calc((100% - 9.09091%) / 2) !important;
+}
+.MuiGridListTile-tile{
+    height: auto !important;
+    position: static !important;
+    overflow: visible;
+}
+.agendaContainer .agendaFile{
+    color: var(--blue-primary);
+    font-size: 2.5em;
+    transition: ease all .3s;
+}
+.agendaContainer .agendaFile:hover{
+    background-color: #eaeaea;
+}
+a.agendaFile > div {
+    padding: 10px 30px;
+}
+
+/* Ajuste de botón eliminar */
+
+ul.MuiGridList-root > li{
+    position: relative;
+    overflow: hidden;
+}
+ul.MuiGridList-root > li .agendaNewEliminar {
+    position: absolute;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.3);
+    padding-top: 15px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: auto;
+    background-color: #e44e44;
+    color: #fff;
+    transform: translateY(-30px);
+    transition: ease all .3s;
+}
+ul.MuiGridList-root > li:hover .agendaNewEliminar{
+    transform: translateY(7px);
+}
+ul.MuiGridList-root > li .agendaFile > div{
+    transition: ease all .3s;
+}
+ul.MuiGridList-root > li:hover .agendaFile > div{
+    transform: translateY(18px);
+}
+.agendaContainer .camara,
+.agendaContainer .senado{
+    background-color: transparent;
+}
+.agendaContainer .camara{
+    border: 1px solid #e9ac3369;
+    background-color: #e9ac3307;
+}
+.agendaContainer .senado{
+    border: 1px solid #029cd963;
+    background-color: #029cd907;
+}
+
+

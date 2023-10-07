@@ -1,0 +1,326 @@
+:root{
+    --initial: 40%;
+    --zoomCount: 0;
+}
+.none{
+    visibility: hidden;
+}
+.cls-1 {
+    fill: none;
+    stroke-width: 0.25px;
+}
+
+.cls-1,
+.cls-2 {
+    stroke: rgb(145, 145, 145);
+    stroke-miterlimit: 10;
+}
+.cls-2{
+    fill: #3f4653;
+    stroke: #3f4653;
+    stroke-width: .5px;
+}
+path.arc{
+    fill: none;
+    stroke: rgb(145, 145, 145);
+}
+circle{
+    transition: ease all .3s;
+}
+circle:hover{
+    cursor: pointer;
+}
+circle.selected{
+    fill: #00b963 !important;
+    stroke: #fff !important;
+    stroke-width: 3px;
+    stroke-dasharray: 4px;
+    stroke-dashoffset: 3px;
+    animation: circleSelected linear 1.5s infinite;
+}
+circle.declared{
+    stroke: #fff !important;
+    stroke-width: 3px;
+    stroke-dasharray: 4px;
+    stroke-dashoffset: 3px;
+    animation: circleSelected linear 1.5s infinite;
+}
+circle.afavor{
+    fill: #00b963 !important;
+}
+circle.encontra{
+    fill: #e44e44 !important;
+}
+circle.ausente{
+    fill: #c9c043 !important;
+}
+#checkShape{
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+}
+@keyframes circleSelected{
+    to{
+        stroke-dashoffset: 19px;
+    }
+}
+
+/* curulContainer */
+.curulContainer{
+    position: relative;
+}
+/* End curulContainer */
+
+/* filters */
+.curulContainer .filters{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.curulContainer .filters > *{
+    margin: 3px 7px;
+    min-width: calc(100% / 4 - 14px);
+}
+/* End filters */
+
+/* screen */
+.curulContainer .screen{
+    position: relative;
+    max-height: calc(80vh);
+}
+/* end screen */
+
+/* Controls */
+.curulContainer .screen .curulControls{
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+}
+.curulContainer .screen .curulControls ul{
+    padding: 0;
+    margin: 0;
+}
+.curulContainer .screen .curulControls ul li{
+    padding: 7px;
+    margin: 15px 7px;
+    list-style-type: none;
+    font-size: 1.5em;
+    background-color: #fafafb;
+    border: 1px solid #ccc;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.curulContainer .screen .curulControls ul li:hover{
+    cursor: pointer;
+}
+.curulContainer .screen .curul{
+    overflow-y: auto;
+    max-height: 80vh;
+}
+.curulContainer .screen .curul:hover{
+    cursor: grab;
+}
+.curulContainer .screen .curul:active{
+    cursor: grabbing;
+}
+
+.curulContainer .screen .curul svg[data-zoom="1"]{--zoomCount: 0}
+.curulContainer .screen .curul svg[data-zoom="2"]{--zoomCount: 1}
+.curulContainer .screen .curul svg[data-zoom="3"]{--zoomCount: 2}
+.curulContainer .screen .curul svg[data-zoom="4"]{--zoomCount: 3}
+.curulContainer .screen .curul svg[data-zoom="5"]{--zoomCount: 4}
+.curulContainer .screen .curul svg[data-zoom="6"]{--zoomCount: 5}
+.curulContainer .screen .curul svg[data-zoom="7"]{--zoomCount: 6}
+.curulContainer .screen .curul svg[data-zoom="8"]{--zoomCount: 7}
+.curulContainer .screen .curul svg[data-zoom="9"]{--zoomCount: 8}
+
+.curulContainer .screen .curul svg{
+    width: calc(var(--initial) + (10% * var(--zoomCount)));
+    display: block;
+    margin: auto;
+    transition: ease all .3s;
+}
+.curulContainer .screen .curul::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}
+.curulContainer .screen .curul::-webkit-scrollbar-thumb{
+    background-color: #4d4d4d;
+    border-radius: 5px;
+}
+.curulContainer .screen .curul::-webkit-scrollbar-track{
+    background-color: #ccc;
+}
+/* End controls */
+
+
+.curulContainer .infoPreviewContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    transition: ease all .3s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.curulContainer .infoPreviewContainer .infoPreviewCloseButton{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    color: #333;
+}
+.curulContainer .infoPreviewContainer.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.curulContainer .infoPreviewContainer .infoPreview {
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,.3);
+}
+.curulContainer .infoPreviewContainer .infoPreview > *{
+    margin: 15px 15px
+}
+.curulContainer .infoPreviewContainer .infoPreview .photo {
+    width: calc(35%);
+}
+.curulContainer .infoPreviewContainer .infoPreview .photo img{
+    width: 100%;
+}
+
+.curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub {
+    display: flex;
+}
+.curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub >* {
+    margin: 25px 15px
+}
+.curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub .image{
+    width: 150px
+}
+.curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub .image img{
+    width: 100%;
+}
+.curulContainer .infoPreviewContainer .infoPreview .infoContainer .info h3{
+    font-size: 1.6em;
+}
+.curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub .text{
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 748px){
+    .curulContainer .infoPreviewContainer .infoPreview{
+        width: 95%;
+        height: 95%;
+    }
+    .curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub .image{
+        width: 100px
+    }
+    .curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub .text{
+        font-size: 1.1em
+    }
+}
+
+@media only screen and (max-width: 747px) and (min-width: 300px){
+    :root{
+        --initial: 70%;
+    }
+    .curulContainer .infoPreviewContainer .infoPreview{
+        width: 95%;
+        height: 95%;
+        align-items: flex-start;
+        overflow-y: auto
+    }
+    .curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub{
+        flex-direction: column;
+    }
+    .curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub > *{
+        margin: 6px auto;
+    }
+    .curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub .image{
+        width: 100px
+    }
+    .curulContainer .infoPreviewContainer .infoPreview .infoContainer .info .sub .text{
+        font-size: 1.1em
+    }
+}
+
+/* popup */
+
+.circulo-foto,
+.clase-6 {
+    fill: none;
+}
+
+.popup-2 {
+    isolation: isolate;
+}
+
+.popup-3 {
+    opacity: 0.2;
+    mix-blend-mode: multiply;
+}
+
+.popup-4 {
+    fill: #fff;
+}
+
+.popup-5 {
+    fill: #ddd;
+}
+
+.popup-6 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 0.5px;
+}
+
+.popup-7 {
+    font-size: 5.78px;
+    font-family: Lato-Regular, Lato;
+}
+
+.popup-8 {
+    letter-spacing: -0.01em;
+}
+
+.popup-9 {
+    letter-spacing: -0.02em;
+}
+
+.popup-10 {
+    letter-spacing: -0.01em;
+}
+
+#foto {
+    clip-path: url(#clip-path);
+}
+
+.popupContainer{
+    transition: ease all .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.popupContainer.show{
+    visibility: visible;
+    opacity: 1;
+}
+/* End popup */
