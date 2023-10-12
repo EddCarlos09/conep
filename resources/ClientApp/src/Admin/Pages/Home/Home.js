@@ -1,7 +1,13 @@
 ﻿import React, { Component } from 'react';
 import Spinner from '../../../Components/Spinner';
 
+
+
+
+
 class Home extends Component {
+  
+
     static displayName = Home.name;
     constructor(props) {
         super(props);
@@ -23,16 +29,59 @@ class Home extends Component {
         if(window.location.href.includes("/?#/home"))            
                 window.location.href = "/#/home";
 
+                  const carousel = {
+                        overflow:'hidden',
+                        width: '100%',
+                    
+                    
+                        height: '100%', 
+                        margin: '0 auto'
+                    };
+                
+                    const casu2 = {
+                        display: 'flex',
+                        transition: 'transform 0.5s ease',
+                        marginTop:'5em',
+                    }
+
+                    const slide = {
+                        flex: '0 0 100%',
+                        display: 'flex',
+                        justifyContent: 'center',
+                    }
+
+
         return (
+            
+
             <div>
+                
                 <Spinner show={this.state.loading} />
                 <ul className="breadcrumb">
                     <li><a href="#/">Página principal</a></li>
                 </ul>
                 <div className="page-content-wrap">
                     <div className="row menuHome mainPageDescription">
-                        <div className="col-md-6">
+                        <div className="col-md-12 mainPageDescription">
                             <div className="row">
+                                <div className='col-md-12'>
+                                    <div class="carousel-container" style={carousel}>
+                                        <div class="carousel" style={casu2}>
+                                            <div class="slide" style={slide}>
+                                                <img width={700} src="/img/imagen1.jpg" alt="Imagen 1" />
+                                            </div>
+                                            <div class="slide" style={slide}>
+                                                <img  width={700} src="/img/imagen2.jpg" alt="Imagen 2" />
+                                            </div>
+                                            <div  class="slide" style={slide}>
+                                                <img width={1200} src="/img/banner.jpg" alt="Imagen 3" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script src="script.js"></script>
+                                </div>
+                            
+{/* 
                                 <div className="col-md-12 ">
                                     <div className="row slogan">
                                         <div className="col-md-12">
@@ -48,7 +97,7 @@ class Home extends Component {
                                     <p>Con este objetivo en mente el CoNEP pone a disposición la herramienta Observatorio Legislativo que permitirá al sector privado del país tener acceso de manera actualizada al perfil de los diputados que conforman la asamblea, partido político, circuito que representan, agenda e iniciativas legislativas presentadas, así como estatus de las mismas y otra información relevante. </p>
                                     <p>Esperamos que esta herramienta que ponemos a la disposición del sector privado contribuya a lograr legislación y políticas encaminadas al desarrollo integral, económico y social del país para elevar sistemáticamente el nivel de vida de nuestra población. </p>
                                     <p>Agradecemos nos comparta sus comentarios en el uso de la herramienta al correo: <strong>dejecutiva@conep.org.pa</strong></p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                        
@@ -81,3 +130,39 @@ class Home extends Component {
 }
 
 export default Home;
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel");
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        if (index < 0) {
+            index = slides.length - 1;
+        } else if (index >= slides.length) {
+            index = 0;
+        }
+
+        carousel.style.transition = "transform 0.5s ease"; // Agregar transición
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+        currentIndex = index;
+    }
+
+    function nextSlide() {
+        currentIndex++;
+        if (currentIndex >= slides.length) {
+            currentIndex = 0;
+        }
+        showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 3000); // Cambia de slide cada 3 segundos (ajusta según lo desees)
+
+    // Mostrar el primer slide al cargar la página
+    showSlide(currentIndex);
+});
+
+
+
+
