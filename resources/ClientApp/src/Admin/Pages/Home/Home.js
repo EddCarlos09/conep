@@ -65,15 +65,15 @@ class Home extends Component {
                         <div className="col-md-12 mainPageDescription">
                             <div className="row">
                                 <div className='col-md-12'>
-                                    <div class="carousel-container" style={carousel}>
-                                        <div class="carousel" style={casu2}>
-                                            <div class="slide" style={slide}>
+                                    <div className="carousel-container" style={carousel}>
+                                        <div className="carousel" style={casu2}>
+                                            <div className="slide" style={slide}>
                                                 <img width={700} src="/img/imagen1.jpg" alt="Imagen 1" />
                                             </div>
-                                            <div class="slide" style={slide}>
+                                            <div className="slide" style={slide}>
                                                 <img  width={700} src="/img/imagen2.jpg" alt="Imagen 2" />
                                             </div>
-                                            <div  class="slide" style={slide}>
+                                            <div  className="slide" style={slide}>
                                                 <img width={1200} src="/img/banner.jpg" alt="Imagen 3" />
                                             </div>
                                         </div>
