@@ -367,6 +367,10 @@ class Home extends React.Component {
                     this.handlerChooseYear(e);
                 });
             });
+            const carousel = document.querySelector(".carousel");
+            const slides = document.querySelectorAll(".slide");
+
+            setInterval(nextSlide, 3000, carousel, slides);
         }
         await this.getDataByYearAndMonth(this.state.year, this.state.mesActual);
         await this.getTipoActividad();
@@ -383,26 +387,26 @@ class Home extends React.Component {
     render() {
 
         const carousel = {
-                        overflow:'hidden',
-                        width: '100%',
-                    
-                    
-                        height: '100%', 
-                        margin: '0 auto'
-                    };
-                
-                    const casu2 = {
-                        display: 'flex',
-                        transition: 'transform 0.5s ease',
-                        marginTop:'5em',
-                         marginBottom:'10em',
-                    }
-
-                    const slide = {
-                        flex: '0 0 100%',
-                        display: 'flex',
-                        justifyContent: 'center',
-                    }
+            overflow:'hidden',
+            width: '100%',
+        
+        
+            height: '100%', 
+            margin: '0 auto'
+        };
+        
+        const casu2 = {
+            display: 'flex',
+            transition: 'transform 0.5s ease',
+            marginTop:'5em',
+        }
+        
+        const slide = {
+            flex: '0 0 100%',
+            display: 'flex',
+            justifyContent: 'center',
+        } 
+    
         return (
             <>
                 <main className="workspace overflow-hidden">
@@ -413,22 +417,26 @@ class Home extends React.Component {
                         </ul>
                     </section>
                     <div className="lg:flex mainPageDescription">
-                        <div className='col-md-12'>
-                            <div class="carousel-container" style={carousel}>
-                                <div class="carousel" style={casu2}>
-                                    <div class="slide" style={slide}>
-                                        <img width={700} src="/img/imagen1.jpg" alt="Imagen 1" />
-                                    </div>
-                                    <div class="slide" style={slide}>
-                                        <img  width={700} src="/img/imagen2.jpg" alt="Imagen 2" />
-                                    </div>
-                                    <div  class="slide" style={slide}>
-                                        <img width={1200} src="/img/banner.jpg" alt="Imagen 3" />
-                                    </div>
-                                </div>
+                        <div className="row">
+                                <div className='col-md-12'>
+                                    <div className="carousel-container">
+                                        <div className="carousel" style={casu2}>
+                                            <div className="slide" style={slide}>
+                                                <img width={700} src="/img/imagen1.jpg" alt="Imagen 1" />
+                                            </div>
+                                            <div className="slide" style={slide}>
+                                                <img  width={700} src="/img/imagen2.jpg" alt="Imagen 2" />
+                                            </div>
+                                            <div  className="slide" style={slide}>
+                                                <img width={1200} src="/img/banner.jpg" alt="Imagen 3" />
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <script src="script.js"></script>
+                                </div>   
+                            
+
                             </div>
-                            <script src="script.js"></script>
-                        </div>
                         {/* <div className="lg:w-1/2 lg:px-4 ">
                             <div className="lg:flex slogan">
                                 <div className="lg:w-1/2 lg:px-4">
@@ -757,12 +765,9 @@ function prevNextMonth(str, next = false) {
 }
 export default Home;
 
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".carousel");
-    const slides = document.querySelectorAll(".slide");
-    let currentIndex = 0;
+let currentIndex = 0;
 
-    function showSlide(index) {
+    function showSlide(index, carousel, slides) {
         if (index < 0) {
             index = slides.length - 1;
         } else if (index >= slides.length) {
@@ -774,16 +779,13 @@ document.addEventListener("DOMContentLoaded", function () {
         currentIndex = index;
     }
 
-    function nextSlide() {
+    function nextSlide(carousel, slides) {
+        
         currentIndex++;
+       
         if (currentIndex >= slides.length) {
             currentIndex = 0;
+          
         }
-        showSlide(currentIndex);
+        showSlide(currentIndex, carousel, slides);
     }
-
-    setInterval(nextSlide, 3000); // Cambia de slide cada 3 segundos (ajusta según lo desees)
-
-    // Mostrar el primer slide al cargar la página
-    showSlide(currentIndex);
-});
