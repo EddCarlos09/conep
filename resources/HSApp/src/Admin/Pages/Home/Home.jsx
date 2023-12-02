@@ -367,10 +367,7 @@ class Home extends React.Component {
                     this.handlerChooseYear(e);
                 });
             });
-            const carousel = document.querySelector(".carousel");
-            const slides = document.querySelectorAll(".slide");
-
-            setInterval(nextSlide, 3000, carousel, slides);
+            
         }
         await this.getDataByYearAndMonth(this.state.year, this.state.mesActual);
         await this.getTipoActividad();
@@ -383,6 +380,10 @@ class Home extends React.Component {
             this.state.fechaActual
         );
         await this.getProyectosRecientesEditados();
+
+        const carousel = document.querySelector(".carousel");
+        const slides = document.querySelectorAll(".slide");
+        setInterval(nextSlide, 3000, carousel, slides);
     }
     render() {
 
